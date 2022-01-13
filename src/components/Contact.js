@@ -1,10 +1,10 @@
 import React from "react";
 
 const Contact = (props) => {
-
-  setTimeout( () =>{
-    props.history.push('/aboutus')
-  },2000)
+  console.log(props)
+  // setTimeout( () =>{
+  //   props.history.push('/aboutus')
+  // },2000)
 
   return (
     <section className="mb-4" style={{ backgroundColor: "purple",padding:'40px' }}>
