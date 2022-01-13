@@ -1,6 +1,11 @@
 import React from "react";
 
-const Contact = () => {
+const Contact = (props) => {
+
+  setTimeout( () =>{
+    props.history.push('/aboutus')
+  },2000)
+
   return (
     <section className="mb-4" style={{ backgroundColor: "purple",padding:'40px' }}>
       <h2 className="h1-responsive font-weight-bold text-center my-4">
@@ -54,7 +59,7 @@ const Contact = () => {
           <div className="col-md-6">
             <div className="md-form mb-0">
               
-              <label for="subject" class="">Subject</label>
+              <label htmlFor="subject" className="">Subject</label>
               
             </div>
           </div>
@@ -68,13 +73,13 @@ const Contact = () => {
           </div>
           <div className="col-md-6">
             <div className="md-form mb-0">
-            <label for="message">Your message</label>
+            <label htmlFor="message">Your message</label>
             </div>
           
           </div>
           <div className="col-md-6">
             <div className="md-form mb-0">
-            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+            <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
             </div>
           </div>
          
