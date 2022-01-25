@@ -1,10 +1,7 @@
 import React from "react";
 
-const Contact = (props) => {
-  console.log(props)
-  // setTimeout( () =>{
-  //   props.history.push('/aboutus')
-  // },2000)
+const Contact = () => {
+ 
 
   return (
     <section className="mb-4" style={{ backgroundColor: "purple",padding:'40px' }}>
